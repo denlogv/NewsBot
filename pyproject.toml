@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "newsbot"
+version = "0.1.0"
+description = "Filters important news and sends them via Telegram bot."
+authors = ["Denis Logvinenko <denislogwinenko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-telegram-bot = "^20.7"
+dateparser = "^1.2.0"
+lxml = "^4.9.3"
+
+[tool.poetry.group.dev.dependencies]
+transformers = "^4.35.2"
+torch = "^2.1.1"
+weaviate-client = "^3.25.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
